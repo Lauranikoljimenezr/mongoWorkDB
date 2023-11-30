@@ -1,0 +1,14 @@
+// con esta instruccion a los producto 
+//con la categoria juguetes inverta un atributo 
+// llamado inventary en su valor true
+use("pet_store")
+db.products.updateMany(
+    // query
+    { category: "Juguetes" },
+    // update - operators
+    {
+      $set: {
+        color: "azul"
+      }
+    }
+ )
